@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styling.css">
 </head>
 <body>
     <header>
         <h1>Hi, I'm Alisha Sigdel</h1>
         <p>Welcome to my portfolio website</p>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a level 4 student studying Computer Science at Biratnagar International College. I am working as a part-time content creator and model at a Social Media Agency.I am passionate about learning new things too.</p>
+        <p>I am a level 5 student studying Computer Science at Biratnagar International College and I am working as a part-time content creator and model at a Social Media Agency.I am passionate about learning new things.</p>
     </section>
 
     <section id="projects">
+        <img src="images/image.png" alt="" width="600" height="500">
         <h2>My Projects</h2>
         <p> 1.WeatherApp <br> 2.Ceasar Cipher <br> 3.Tic-Tac-Toe <br> 4.Banking System <br> 5.Farming and Agriculture Management System</p> </br>
     </section>
@@ -25,7 +33,16 @@
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: alishasigdel801@gmail.com</p>
-    </section>
 
+    <form>
+        <input type="text" placeholder="Your Name" required><br><br>
+
+        <input type="email" placeholder="Your Email" required><br><br>
+
+        <textarea placeholder="Your Message" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    </section>
 </body>
 </html>
