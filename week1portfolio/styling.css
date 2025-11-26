@@ -12,7 +12,7 @@
     min-height: 100vh;
   }
   
-  /* Navigation */
+  /*navigation style*/
   nav {
     position: sticky;
     top: 0;
@@ -71,14 +71,14 @@
     width: 100%;
   }
   
-  /* Container */
+  /*container*/
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 5%;
   }
   
-  /* Header with Profile */
+  /*header with profile*/
   header {
     text-align: center;
     padding: 4rem 2rem;
@@ -156,7 +156,7 @@
     font-weight: 300;
   }
   
-  /* Sections */
+  /*sections*/
   section {
     background: white;
     padding: 3rem 2.5rem;
@@ -197,7 +197,7 @@
     background-clip: text;
   }
   
-  /* Projects */
+  /*projects*/
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -212,6 +212,9 @@
     border: 2px solid transparent;
     transition: all 0.3s ease;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .project-card:hover {
@@ -225,8 +228,256 @@
     margin-bottom: 0.5rem;
     font-size: 1.3rem;
   }
-  
-  /* Form */
+
+  .assignment-section {
+  padding: 40;
+  margin-top: 50px;
+  background: #efebf1;
+  border-radius: 10px;
+  color: #181010;
+}
+
+.assignment-section h2 {
+  font-size: rem;
+  margin-bottom: 20px;
+  color: #170c15;
+}
+
+.assignment-section h3 {
+  margin-top: 20px;
+  color: #1a0f1a;
+}
+
+.assignment-section pre {
+  background: #2d1f22;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  color: #ffeafc;
+  margin-bottom: 20px;
+}
+
+.assignment-section code {
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+
+  .skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;   /* <-- Gap between Technical / Creative / Soft Skills */
+  margin-top: 20px;
+}
+
+.skills-card {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  border-radius: 15px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.skills-card h3 {
+  color: #9c44cc;
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 19px;
+  background: #ddd;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+/* colors */
+.html { width: 85%; background-color: #538bad; }
+.css { width: 80%; background-color: #2196F3; }
+.js { width: 60%; background-color: #c36660; }
+.php { width: 40%; background-color: #e36be1; }
+.database { width: 45%; background-color: #bfcd6c; }
+
+.contentcreation { width: 90%; background-color: #aa43cf; }
+.modeling { width: 80%; background-color: #764ba2; }
+.professionaldancer { width: 95%; background-color: #9b33c7; }
+
+.communication { width: 90%; background-color: #183f57; }
+.teamwork { width: 100%; background-color: #2196F3; }
+.leadership { width: 95%; background-color: #c36660; }
+
+* {box-sizing:border-box}
+
+/*slideshow container*/
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/*hides the img slide by default */
+.mySlides {
+  display: none;
+}
+
+/*next and previous buttons*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/*position the(next button) to the right*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*On hover, adds black background color with a little see through*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*caption text*/
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/*number text (1/3)*/
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/*the dots*/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*fading animation*/
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+body {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+/*make all sections turn dark */
+.dark-mode section,
+.dark-mode div,
+.dark-mode .container,
+.dark-mode .project-card,
+.dark-mode .skills-section,
+.dark-mode footer,
+.dark-mode header {
+  background-color: #111 !important;
+  color: white !important;
+}
+
+/*fix buttons inside dark mode */
+.dark-mode button,
+.dark-mode a {
+  background-color: #333 !important;
+  color: white !important;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 80px;
+  height: 80px;
+  font-size: 50px;
+  background: #130b09;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+  opacity: 0;
+}
+
+#backToTop.show {
+  opacity: 1; /*makes it visible when scrolling down */
+}
+
+#backToTop:hover {
+  transform: scale(1.2);
+  background: #6b3894;
+}
+
+#themeToggle {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;  
+  background: #211427;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 100000;
+}
+
   form {
     margin-top: 2rem;
   }
@@ -282,7 +533,6 @@
     transform: translateY(-1px);
   }
   
-  /* Contact Info */
   .contact-info {
     display: flex;
     align-items: center;
@@ -298,8 +548,7 @@
     content: '✉';
     font-size: 1.5rem;
   }
-  
-  /* Footer */
+
   footer {
     text-align: center;
     padding: 2rem;
@@ -307,7 +556,7 @@
     font-size: 0.95rem;
   }
   
-  /* Responsive */
+  /*responsive*/
   @media (max-width: 768px) {
     header h1 {
       font-size: 2.5rem;

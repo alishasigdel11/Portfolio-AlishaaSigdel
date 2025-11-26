@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Details</title>
+</head>
+<body style="font-family: Arial; padding: 2rem;">
+
+    <h2>Submitted Details</h2>
+
+    <p><strong>Name:</strong> <span id="showName"></span></p>
+    <p><strong>Email:</strong> <span id="showEmail"></span></p>
+    <p><strong>Message:</strong> <span id="showMessage"></span></p>
+
+    <p id="successMsg" style="color: green; margin-top:20px;"></p>
+
+<script>
+    document.getElementById("showName").textContent = localStorage.getItem("name");
+    document.getElementById("showEmail").textContent = localStorage.getItem("email");
+    document.getElementById("showMessage").textContent = localStorage.getItem("message");
+
+    document.getElementById("successMsg").textContent = "Your form was submitted successfully!";
+</script>
+
+</body>
+</html>
