@@ -2,22 +2,33 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Movie Manager</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; }
+  .movie-item { margin-bottom: 10px; }
+  button { margin-left: 5px; }
+</style>
 </head>
 <body>
+
 <h1>Movie Collection Manager</h1>
+
 <form id="add-movie-form">
-<h3>Add New Movie</h3>
-<input type="text" id="title" placeholder="Title" required>
-<input type="text" id="genre" placeholder="Genre">
-<input type="number" id="year" placeholder="Release Year" required>
-<button type="submit">Add Movie</button>
+  <h3>Add New Movie</h3>
+  <input type="text" id="title" placeholder="Title" required>
+  <input type="text" id="genre" placeholder="Genre">
+  <input type="number" id="year" placeholder="Release Year" required>
+  <button type="submit">Add Movie</button>
 </form>
+
 <hr>
+
 <h2>Movie List</h2>
 <input type="text" id="search-input" placeholder="Search movies by title or genre">
-<div id="movie-list">
-</div>
-<script src="script.js"></script>
+<div id="movie-list"></div>
+
+
+<script src="script.js" defer></script>
 </body>
 </html>
